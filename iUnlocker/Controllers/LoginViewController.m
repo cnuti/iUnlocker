@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import "sys/utsname.h"
 #import "AFNetworking.h"
-#import "SSKeychain.h"
+#import "SAMKeychain.h"
 #import "SVProgressHUD.h"
 #import <CommonCrypto/CommonDigest.h>
 
@@ -81,8 +81,8 @@
 }
 
 - (void)scaned {
-    NSString *adminUrl = [SSKeychain passwordForService:@"com.puckjs.iUnlocker" account:@"ADMINURL"];
-    NSString *UUID = [SSKeychain passwordForService:@"com.puckjs.iUnlocker" account:@"UUID"];
+    NSString *adminUrl = [SAMKeychain passwordForService:@"com.puckjs.iUnlocker" account:@"ADMINURL"];
+    NSString *UUID = [SAMKeychain passwordForService:@"com.puckjs.iUnlocker" account:@"UUID"];
     
     if (adminUrl == nil || UUID == nil) {
         [SVProgressHUD showErrorWithStatus:@"需要网站授权"];
@@ -118,8 +118,8 @@
 }
 
 - (void)generateUUID {
-    NSString *adminUrl = [SSKeychain passwordForService:@"com.puckjs.iUnlocker" account:@"ADMINURL"];
-    NSString *UUID = [SSKeychain passwordForService:@"com.puckjs.iUnlocker" account:@"UUID"];
+    NSString *adminUrl = [SAMKeychain passwordForService:@"com.puckjs.iUnlocker" account:@"ADMINURL"];
+    NSString *UUID = [SAMKeychain passwordForService:@"com.puckjs.iUnlocker" account:@"UUID"];
     
     if (adminUrl == nil || UUID == nil) {
         [SVProgressHUD showErrorWithStatus:@"需要网站授权"];

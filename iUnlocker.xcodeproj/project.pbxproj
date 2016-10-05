@@ -30,11 +30,11 @@
 		4429D2681D01A01C00B0DD6C /* toolbar_leftarrow@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4429D24A1D01A01C00B0DD6C /* toolbar_leftarrow@3x.png */; };
 		4429D26D1D01A21000B0DD6C /* iUnlockerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4429D26C1D01A21000B0DD6C /* iUnlockerAppDelegate.m */; };
 		4429D2701D01B2E600B0DD6C /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4429D26F1D01B2E600B0DD6C /* QRCodeViewController.m */; };
-		A1A4A61B7741FEF4F6FF349E /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FFD57282E9C688F0486B286E /* libPods.a */; };
+		7E357C165D1792AC5423A5D0 /* libPods-iUnlocker.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3BAF473884A6F4E279F59674 /* libPods-iUnlocker.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		41EB9D6966A1F0F78E6DECAA /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3BAF473884A6F4E279F59674 /* libPods-iUnlocker.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iUnlocker.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		440607D71D029DE200C39602 /* OauthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OauthViewController.h; sourceTree = "<group>"; };
 		440607D81D029DE200C39602 /* OauthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OauthViewController.m; sourceTree = "<group>"; };
 		440607DA1D029E0100C39602 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -67,8 +67,8 @@
 		4429D26E1D01B2E600B0DD6C /* QRCodeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
 		4429D26F1D01B2E600B0DD6C /* QRCodeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
 		4429D2711D01C02200B0DD6C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		8AFB75D54F3D8B724D4FBE69 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		FFD57282E9C688F0486B286E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F391905EBA4BE21EC4E24E /* Pods-iUnlocker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iUnlocker.release.xcconfig"; path = "Pods/Target Support Files/Pods-iUnlocker/Pods-iUnlocker.release.xcconfig"; sourceTree = "<group>"; };
+		D743E89C9EA07C0E7C610E4A /* Pods-iUnlocker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iUnlocker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iUnlocker/Pods-iUnlocker.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A4A61B7741FEF4F6FF349E /* libPods.a in Frameworks */,
+				7E357C165D1792AC5423A5D0 /* libPods-iUnlocker.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,8 +88,8 @@
 			children = (
 				4429D2131D019F7400B0DD6C /* iUnlocker */,
 				4429D2121D019F7400B0DD6C /* Products */,
-				CE32FEBAC235EFFC65B84553 /* Pods */,
 				D2AD75C1B77B4E24F8A97BDD /* Frameworks */,
+				937C441C020BB9CCB3AACA8C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,11 +162,11 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
-		CE32FEBAC235EFFC65B84553 /* Pods */ = {
+		937C441C020BB9CCB3AACA8C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				41EB9D6966A1F0F78E6DECAA /* Pods.debug.xcconfig */,
-				8AFB75D54F3D8B724D4FBE69 /* Pods.release.xcconfig */,
+				D743E89C9EA07C0E7C610E4A /* Pods-iUnlocker.debug.xcconfig */,
+				D3F391905EBA4BE21EC4E24E /* Pods-iUnlocker.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -175,7 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				4429D2711D01C02200B0DD6C /* AVFoundation.framework */,
-				FFD57282E9C688F0486B286E /* libPods.a */,
+				3BAF473884A6F4E279F59674 /* libPods-iUnlocker.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -187,12 +187,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4429D2281D019F7400B0DD6C /* Build configuration list for PBXNativeTarget "iUnlocker" */;
 			buildPhases = (
-				30FE3A14641C62D6F40B8A3D /* Check Pods Manifest.lock */,
+				C19F8E61E35BA2EAF1EE1CC1 /* [CP] Check Pods Manifest.lock */,
 				4429D20D1D019F7400B0DD6C /* Sources */,
 				4429D20E1D019F7400B0DD6C /* Frameworks */,
 				4429D20F1D019F7400B0DD6C /* Resources */,
-				96EC46065F22F6A396DD9713 /* Embed Pods Frameworks */,
-				81C06D9719D3C9C91F199983 /* Copy Pods Resources */,
+				234C245DBD163A01545D47C0 /* [CP] Embed Pods Frameworks */,
+				4CD2BA6E1F02141FE41A7426 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,7 +209,7 @@
 		4429D2091D019F7400B0DD6C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = puckjs.com;
 				TargetAttributes = {
 					4429D2101D019F7400B0DD6C = {
@@ -264,49 +264,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		30FE3A14641C62D6F40B8A3D /* Check Pods Manifest.lock */ = {
+		234C245DBD163A01545D47C0 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iUnlocker/Pods-iUnlocker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CD2BA6E1F02141FE41A7426 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iUnlocker/Pods-iUnlocker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C19F8E61E35BA2EAF1EE1CC1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		81C06D9719D3C9C91F199983 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96EC46065F22F6A396DD9713 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -342,8 +342,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -388,8 +390,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -416,12 +420,13 @@
 		};
 		4429D2291D019F7400B0DD6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 41EB9D6966A1F0F78E6DECAA /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D743E89C9EA07C0E7C610E4A /* Pods-iUnlocker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8K2ACMWJKJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "iUnlocker/iUnlocker-Prefix.pch";
 				INFOPLIST_FILE = iUnlocker/Info.plist;
@@ -436,12 +441,13 @@
 		};
 		4429D22A1D019F7400B0DD6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8AFB75D54F3D8B724D4FBE69 /* Pods.release.xcconfig */;
+			baseConfigurationReference = D3F391905EBA4BE21EC4E24E /* Pods-iUnlocker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8K2ACMWJKJ;
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "iUnlocker/iUnlocker-Prefix.pch";
 				INFOPLIST_FILE = iUnlocker/Info.plist;

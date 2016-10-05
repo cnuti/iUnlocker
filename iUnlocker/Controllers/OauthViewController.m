@@ -9,7 +9,7 @@
 #import "OauthViewController.h"
 #import "sys/utsname.h"
 #import "AFNetworking.h"
-#import "SSKeychain.h"
+#import "SAMKeychain.h"
 #import "SVProgressHUD.h"
 
 @interface OauthViewController ()
@@ -88,8 +88,8 @@
     NSString *appkey = [resultArray objectAtIndex:1];
     
     NSString *UUID = [[NSUUID UUID] UUIDString];
-    [SSKeychain setPassword:UUID forService:@"com.puckjs.iUnlocker" account:@"UUID"];
-    [SSKeychain setPassword:[resultArray objectAtIndex:0] forService:@"com.puckjs.iUnlocker" account:@"ADMINURL"];
+    [SAMKeychain setPassword:UUID forService:@"com.puckjs.iUnlocker" account:@"UUID"];
+    [SAMKeychain setPassword:[resultArray objectAtIndex:0] forService:@"com.puckjs.iUnlocker" account:@"ADMINURL"];
     
     NSDictionary *params = @{
                              @"UUID": UUID,
